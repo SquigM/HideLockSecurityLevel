@@ -6,7 +6,7 @@ includes("lib/commonlibob64")
 
 -- set project
 set_project("HideLockSecurityLevel")
-set_version("0.1")
+set_version("0.2")
 set_license("GPL-3.0")
 
 -- set defaults
@@ -22,7 +22,7 @@ add_rules("mode.debug", "mode.releasedbg")
 add_rules("plugin.vsxmake.autoupdate")
 
 -- set config
-set_config("rex_json", true)
+set_config("rex_ini", true)
 
 -- targets
 target("HideLockSecurityLevel")
