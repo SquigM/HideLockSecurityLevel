@@ -18,7 +18,7 @@ namespace HideLockSecurityLevel
 		}
 
 	public:
-		static constexpr const char* INI_PATH = "OblivionRemastered/Binaries/Win64/OBSE/Plugins/HideLockSecurityLevel.ini";
+		static constexpr const char* INI_PATH = "OBSE/Plugins/HideLockSecurityLevel.ini";
 		static Config*               GetSingleton()
 		{
 			static Config config = Config();

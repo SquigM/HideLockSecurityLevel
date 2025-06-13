@@ -6,7 +6,7 @@ includes("lib/commonlibob64")
 
 -- set project
 set_project("HideLockSecurityLevel")
-set_version("0.2")
+set_version("0.3")
 set_license("GPL-3.0")
 
 -- set defaults
@@ -22,7 +22,7 @@ add_rules("mode.debug", "mode.releasedbg")
 add_rules("plugin.vsxmake.autoupdate")
 
 -- set config
-set_config("rex_ini", true)
+set_config("commonlib_ini", true)
 
 -- targets
 target("HideLockSecurityLevel")
@@ -32,7 +32,11 @@ target("HideLockSecurityLevel")
     -- add commonlibsse plugin
     add_rules("commonlibob64.plugin", {
         name = "HideLockSecurityLevel",
-        author = "SquigM"
+        author = "SquigM",
+        description = "OBSE64 plugin to hide the lock level of a locked door/container when the player places their crosshair over one",
+        options = {
+            address_library = true
+        }
     })
 
     -- add src files
